@@ -1,0 +1,1 @@
+Applies the Observer design pattern to an existing application instead of hard-coding what happens when a motion detector is triggered and how the application uses different accessories.  An additional design pattern is applied in order to adapt the camera to be an accessory. Unit tests are updated to reflect the enhancements to the application.

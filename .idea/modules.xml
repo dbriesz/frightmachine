@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/frightmachine.iml" filepath="$PROJECT_DIR$/frightmachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frightmachine_main.iml" filepath="$PROJECT_DIR$/.idea/modules/frightmachine_main.iml" group="frightmachine" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frightmachine_test.iml" filepath="$PROJECT_DIR$/.idea/modules/frightmachine_test.iml" group="frightmachine" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/techdegree-javaweb-frightmachine-0.0.1.iml" filepath="$PROJECT_DIR$/.idea/modules/techdegree-javaweb-frightmachine-0.0.1.iml" />
+    </modules>
+  </component>
+</project>
