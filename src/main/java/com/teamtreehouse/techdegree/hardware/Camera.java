@@ -1,6 +1,6 @@
 package com.teamtreehouse.techdegree.hardware;
 
-public class Camera {
+public class Camera extends Device {
 
     public void snapPhotos(int numberOfPhotos) {
         for (int i = 0; i < numberOfPhotos; i++) {
