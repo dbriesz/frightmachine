@@ -29,5 +29,9 @@ public class FrightMachine extends MotionDetector {
         for (Device device : devices) {
             device.activate();
         }
+
+        for (Device device : devices) {
+            device.snapPhotos(5);
+        }
     }
 }

@@ -18,6 +18,5 @@ public class Main {
         machine.addAccessory(strobe);
         machine.addDevice(camera);
         machine.simulateMotion();
-        camera.snapPhotos(5);
     }
 }

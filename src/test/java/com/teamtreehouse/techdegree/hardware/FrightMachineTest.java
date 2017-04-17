@@ -1,5 +1,7 @@
 package com.teamtreehouse.techdegree.hardware;
 
+import com.example.accessory.Horn;
+import com.example.accessory.Strobe;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -24,6 +26,13 @@ public class FrightMachineTest {
 
     @Test
     public void whenMotionIsDetectedExpectedPluginsKickOff() throws Exception {
+        Horn horn = new Horn();
+        Strobe strobe = new Strobe();
+        Camera camera = new Camera();
+
+        machine.addAccessory(horn);
+        machine.addAccessory(strobe);
+        machine.addDevice(camera);
         machine.simulateMotion();
         assertThat(systemOutRule.getLog(), allOf(containsString("BEEEEEEEP"),
                                                  containsString("Flashing lights"),
