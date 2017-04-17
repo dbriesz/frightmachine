@@ -28,11 +28,11 @@ public class FrightMachineTest {
     public void whenMotionIsDetectedExpectedPluginsKickOff() throws Exception {
         Horn horn = new Horn();
         Strobe strobe = new Strobe();
-        Camera camera = new Camera();
+        Camera camera = new Camera(5);
 
         machine.addAccessory(horn);
         machine.addAccessory(strobe);
-        machine.addDevice(camera);
+        machine.addAccessory(camera);
         machine.simulateMotion();
         assertThat(systemOutRule.getLog(), allOf(containsString("BEEEEEEEP"),
                                                  containsString("Flashing lights"),

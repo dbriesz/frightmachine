@@ -9,14 +9,9 @@ import java.util.List;
 public class FrightMachine extends MotionDetector {
 
     private List<Accessory> accessories = new ArrayList<>();
-    private List<Device> devices = new ArrayList<>();
 
     public void addAccessory(Accessory accessory) {
         accessories.add(accessory);
-    }
-
-    public void addDevice(Device device) {
-        devices.add(device);
     }
     
     @Override
@@ -24,14 +19,6 @@ public class FrightMachine extends MotionDetector {
 
         for (Accessory accessory : accessories) {
             accessory.activate();
-        }
-
-        for (Device device : devices) {
-            device.activate();
-        }
-
-        for (Device device : devices) {
-            device.snapPhotos(5);
         }
     }
 }
